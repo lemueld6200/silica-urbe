@@ -1,0 +1,93 @@
+{
+  "name": "silica-urbe",
+  "version": "1.0.0",
+  "description": "The Official Unofficial Website of Silica Urbe.",
+  "main": "server/server",
+  "scripts": {
+    "start": "nodemon server/server",
+    "build": "gulp"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "html-minifier": "^4.0.0",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-compress": "^3.0.0",
+    "koa-html-minifier": "^1.0.1",
+    "koa-html-minifier2": "^1.0.7",
+    "koa-logger": "^3.2.1",
+    "koa-minify": "^2.0.1",
+    "koa-router": "^8.0.7",
+    "koa-static": "^5.0.0",
+    "koa-uglify2": "^0.0.7",
+    "koa-views": "^6.2.1",
+    "node-sass": "^4.13.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-reporter": "^6.0.1",
+    "precss": "^4.0.0",
+    "socket.io": "^2.3.0",
+    "stylelint": "^13.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "swig-extras": "^0.0.1",
+    "swig-templates": "^2.0.3",
+    "uglify-js": "^3.7.7",
+    "workbox-build": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.19.1",
+    "nodemon": "^2.0.2"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": 2,
+      "string-quotes": "double",
+      "color-hex-case": "lower",
+      "color-hex-length": "long",
+      "selector-no-qualifying-type": true,
+      "selector-combinator-space-after": "always",
+      "selector-attribute-operator-space-before": "always",
+      "selector-attribute-operator-space-after": "always",
+      "selector-attribute-brackets-space-inside": "always",
+      "declaration-block-trailing-semicolon": "always",
+      "declaration-colon-space-before": "never",
+      "declaration-colon-space-after": "always",
+      "comment-whitespace-inside": "always",
+      "media-feature-range-operator-space-before": "always",
+      "media-feature-range-operator-space-after": "always",
+      "media-feature-parentheses-space-inside": "always",
+      "media-feature-colon-space-before": "always",
+      "media-feature-colon-space-after": "always"
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "last 4 version"
+  ],
+  "nodemonConfig": {
+    "delay": "2500",
+    "ext": "html,css,js,json"
+  },
+  "keywords": [
+    "afse"
+  ],
+  "author": "Lemuel De Los Santos",
+  "contributors": [
+    ""
+  ],
+  "engines": {
+    "node": "8.x"
+  },
+  "license": "MIT"
+}

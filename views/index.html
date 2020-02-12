@@ -1,0 +1,201 @@
+{% extends "./layout.html" %} {% block head %} {% parent %}
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+  integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY="
+  crossorigin="anonymous"
+></script>
+{% endblock %} {% block body %}
+<div id="particles"></div>
+
+<header class="header siteTopHeader">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">
+      <h1>
+        <img
+          src="/img/icons/mstile-70x70.png"
+          height="75"
+          alt="Silica Urbe Icon"
+        />
+        Silica Urbe
+      </h1>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="siteTopNav collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <ul class="smooth-scroll navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">
+            <i class="fas fa-info fa-xs mr-2"></i> Welcome
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">
+            <i class="fas fa-landmark fa-xs mr-2"></i> Brief History
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#map">
+            <i class="fas fa-map fa-xs mr-2"></i> Map
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#flag">
+            <i class="fas fa-flag fa-xs mr-2"></i> Our Flag
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#medal">
+            <i class="fas fa-medal fa-xs mr-2"></i> Medal of Honor
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <nav
+    id="info-tab"
+    class="navbar navbar-expand-lg navbar-dark primary-color justify-content-between"
+  >
+    <strong class="text-uppercase">
+      The Official Unofficial Website of Silica Urbe &mdash;&nbsp;
+      .
+    </strong>
+    <a class="close ml-auto" title="Close" aria-label="Close" aria-hidden="true"
+      >&times;</a
+    >
+  </nav> -->
+</header>
+
+<div
+  id="main-container"
+  class="container"
+  data-spy="scroll"
+  data-target="#navbar"
+>
+  <section id="intro" class="card">
+    <h3>
+      Welcome to Silica Urbe
+    </h3>
+    <blockquote class="blockquote bq-primary">
+      <p class="bq-title">Our Motto</p>
+      <p class="mb-0">
+        A world light years beyond your imagination. Adorn your life with
+        gaming, adding fun to your life&mdash;adrenaline inside. Are you up to
+        the challenge?
+      </p>
+      <footer class="blockquote-footer mb-3">
+        President of Silica Urbe&nbsp;
+        <cite title="Lemuel De Los Santos">Lemuel De Los Santos</cite>
+      </footer>
+    </blockquote>
+  </section>
+
+  <section id="history" class="card">
+    <h3>
+      A Brief History of our Country
+    </h3>
+    <p>
+      Content
+    </p>
+  </section>
+
+  <section id="map" class="card">
+    <h3>
+      Location of Silica Urbe
+    </h3>
+    <div class="z-depth-1-half map-container">
+      <iframe
+        title="Silica Urbe location in Los Angeles"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2740881873!2d-118.69192317012651!3d34.02016130042048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1581430030330!5m2!1sen!2sus"
+        width="100%"
+        height="500"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+  </section>
+
+  <section id="flag" class="card">
+    <div class="row">
+      <div
+        class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center"
+      >
+        <img
+          src="/img/silica-urbe-flag.svg"
+          class="img-fluid"
+          alt="Silica Urbe Flag"
+          title="Silica Urbe Flag"
+          width="200%"
+        />
+      </div>
+
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h3 class="font-weight-bold">Our Nation Flag</h3>
+
+        <p class="font-weight-bold">That's a very nice subheading</p>
+
+        <p class="text-muted">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
+          sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia
+          similique corrupti magnam, doloremque laborum.
+        </p>
+
+        <a class="font-weight-bold" href="#"
+          >Learn more<i class="fas fa-angle-right ml-2"></i
+        ></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="medal" class="card">
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h3 class="font-weight-bold">Medal of Honor</h3>
+
+        <p class="font-weight-bold">That's a very nice subheading</p>
+
+        <p class="text-muted">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
+          sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia
+          similique corrupti magnam, doloremque laborum.
+        </p>
+
+        <a class="font-weight-bold" href="#"
+          >Learn more<i class="fas fa-angle-right ml-2"></i
+        ></a>
+      </div>
+
+      <div
+        class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center"
+      >
+        <img
+          src="/img/medal.svg"
+          class="img-fluid"
+          alt="Silica Urbe Medal of Honor"
+          title="Silica Urbe Medal of Honor"
+          width="50%"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer page-footer font-small">
+  <div class="footer-copyright text-center py-3">
+    &copy; 2020 Copyright:&nbsp;<a href="#">Lemuel De Los Santos</a>&nbsp;All
+    Rights Reserved
+  </div>
+</footer>
+{% endblock %}

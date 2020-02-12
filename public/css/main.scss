@@ -1,0 +1,144 @@
+@import "_vars";
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  color: $color;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  scroll-padding: 1rem;
+  scroll-snap-align: start;
+  // background: $background;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+
+  &:hover {
+    background: #222222;
+  }
+}
+
+#particles {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -9999;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.section {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  display: block;
+  padding: 14px 16px;
+  background-color: black;
+}
+
+.header,
+.footer {
+  background: #000000ee;
+}
+
+#info-tab {
+  background: fade-out($primary, 0.5) !important;
+}
+
+#textSwapper {
+  color: $primary;
+  display: inline-block;
+}
+
+#main-container {
+  margin: 10px auto;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px 0;
+  background: #333333aa;
+  // background-color: $background;
+  scroll-snap-align: start;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.siteTop {
+  display: flex;
+  padding-bottom: 10px;
+  background-color: black;
+  margin-bottom: 25px;
+  color: $primary;
+}
+
+.siteTopHeader {
+  h1 {
+    margin: 0;
+    color: $primary;
+  }
+}
+
+.siteTopNav {
+  li {
+    display: inline;
+    vertical-align: middle;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 150%;
+
+    a {
+      text-decoration: inherit;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+.leftColumn {
+  width: 65%;
+}
+
+.rightColumn {
+  padding-left: 20px;
+  width: 35%;
+}
+
+.btn {
+  width: 100%;
+  background-color: $primary;
+  color: white;
+}
+
+hr {
+  background-color: white;
+}

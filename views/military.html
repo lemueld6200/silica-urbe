@@ -1,0 +1,119 @@
+{% extends "./layout.html" %} {% block head %} {% parent %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+  integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
+{% endblock %} {% block body %}
+<div id="particles"></div>
+
+<header class="header siteTopHeader">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">
+      <h1>
+        <img src="/img/icons/mstile-70x70.png" height="75" alt="Silica Urbe Icon" />
+        Silica Urbe
+      </h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="siteTopNav collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="smooth-scroll navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">
+            <i class="fas fa-balance-scale fa-xs mr-2"></i> Policy
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#medal">
+            <i class="fas fa-medal fa-xs mr-2"></i> Medals of Honor
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div id="main-container" class="container" data-spy="scroll" data-target="#navbar">
+  <section id="history" class="card">
+    <h3 class="font-weight-bold">
+      Military Policy
+    </h3>
+    <p>
+      Content
+    </p>
+  </section>
+
+  <section id="medal" class="card">
+    <h2 class="font-weight-bold">Medals of Honor</h2>
+
+    <hr class="my-5" />
+
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h3 class="font-weight-bold">Platinum</h3>
+
+        <p class="font-weight-bold">That's a very nice subheading</p>
+
+        <p class="text-muted">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
+          sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia
+          similique corrupti magnam, doloremque laborum.
+        </p>
+
+        <a class="font-weight-bold" href="#">Learn more<i class="fas fa-angle-right ml-2"></i></a>
+      </div>
+
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+        <img src="/img/medal.svg" class="img-fluid" alt="Silica Urbe Medal of Honor" title="Silica Urbe Medal of Honor"
+          width="50%" />
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h3 class="font-weight-bold">Silver</h3>
+
+        <p class="font-weight-bold">That's a very nice subheading</p>
+
+        <p class="text-muted">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
+          sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia
+          similique corrupti magnam, doloremque laborum.
+        </p>
+
+        <a class="font-weight-bold" href="#">Learn more<i class="fas fa-angle-right ml-2"></i></a>
+      </div>
+
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+        <img src="/img/smedal.svg" class="img-fluid" alt="Silica Urbe Medal of Honor" title="Silica Urbe Medal of Honor"
+          width="50%" />
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h3 class="font-weight-bold">Platinum</h3>
+
+        <p class="font-weight-bold">That's a very nice subheading</p>
+
+        <p class="text-muted">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
+          sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia
+          similique corrupti magnam, doloremque laborum.
+        </p>
+
+        <a class="font-weight-bold" href="#">Learn more<i class="fas fa-angle-right ml-2"></i></a>
+      </div>
+
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+        <img src="/img/medal.svg" class="img-fluid" alt="Silica Urbe Medal of Honor" title="Silica Urbe Medal of Honor"
+          width="50%" />
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

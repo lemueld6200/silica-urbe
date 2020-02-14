@@ -7,8 +7,8 @@
 require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
-// const http = require("http");
-const https = require("https");
+const http = require("http");
+// const https = require("https");
 const app = require("./app");
 
 /**
@@ -18,15 +18,10 @@ const app = require("./app");
 const port = normalizePort(process.env.PORT);
 
 /**
- * Create HTTPS server.
+ * Create HTTP server.
  */
 
-const options = {
-  key: fs.readFileSync(path.resolve(__dirname, "../cert/key.pem"), "utf8"),
-  cert: fs.readFileSync(path.resolve(__dirname, "../cert/cert.pem"), "utf8")
-};
-const server = https.createServer(
-  options,
+const server = http.createServer(
   app.callback()
 );
 
